@@ -1,0 +1,24 @@
+[ 2024-02-25 17:29:05,503 ] 25 root - INFO - Data Ingestion method starts
+[ 2024-02-25 17:29:05,512 ] 29 root - INFO - Dataset read as pandas DataFrame
+[ 2024-02-25 17:29:05,520 ] 35 root - INFO - Train test split
+[ 2024-02-25 17:29:05,528 ] 41 root - INFO - Ingestion of data is completed
+[ 2024-02-25 17:29:05,554 ] 56 root - INFO - Read train and test data completed
+[ 2024-02-25 17:29:05,560 ] 57 root - INFO - Train Dataframe Head : 
+   cement  blast_furnace_slag  fly_ash  water  superplasticizer  coarse_aggregate  fine_aggregate   age  concrete_compressive_strength
+0   145.4                 0.0    178.9  201.7               7.8             824.0            868.7   28                          10.54
+1   525.0                 0.0      0.0  189.0               0.0            1125.0            613.0  270                          67.11
+2   190.3                 0.0    125.2  166.6               9.9            1079.0            798.9   14                          19.42
+3   145.7               172.6      0.0  181.9               3.4             985.8            816.8   28                          23.74
+4   322.0               149.0      0.0  186.0               8.0             951.0            709.0   28                          52.42
+[ 2024-02-25 17:29:05,566 ] 58 root - INFO - Test Dataframe Head  : 
+   cement  blast_furnace_slag  fly_ash  water  superplasticizer  coarse_aggregate  fine_aggregate   age  concrete_compressive_strength
+0   332.5               142.5      0.0  228.0               0.0             932.0            594.0  365                          41.05
+1   202.0                11.0    141.0  206.0               1.7             942.0            801.0    7                          15.07
+2   323.7               282.8      0.0  183.8              10.3             942.7            659.9    7                          49.80
+3   108.3               162.4      0.0  203.5               0.0             938.2            849.0   90                          29.23
+4   315.0               137.0      0.0  145.0               5.9            1130.0            745.0   28                          81.75
+[ 2024-02-25 17:29:05,566 ] 60 root - INFO - Obtaining preprocessing object
+[ 2024-02-25 17:29:05,566 ] 25 root - INFO - Data Transformation initiated
+[ 2024-02-25 17:29:05,566 ] 26 root - INFO - Pipeline Initiated
+[ 2024-02-25 17:29:05,566 ] 43 root - INFO - Pipeline Completed
+[ 2024-02-25 17:29:05,566 ] 93 root - INFO - Exception occurred in the initiate_data_transformation

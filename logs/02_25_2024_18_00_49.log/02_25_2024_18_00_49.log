@@ -1,0 +1,15 @@
+[ 2024-02-25 18:00:49,380 ] 148 numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[ 2024-02-25 18:00:49,380 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2024-02-25 18:00:50,302 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2024-02-25 18:00:50,310 ] 224 werkzeug - INFO -  * Debugger PIN: 935-135-885
+[ 2024-02-25 18:00:54,524 ] 224 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 18:00:54] "GET /predict HTTP/1.1" 200 -
+[ 2024-02-25 18:00:54,556 ] 224 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 18:00:54] "[33mGET /assests/photo.jpg HTTP/1.1[0m" 404 -
+[ 2024-02-25 18:00:54,556 ] 224 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 18:00:54] "[33mGET /assets/diamond_video.mp4 HTTP/1.1[0m" 404 -
+[ 2024-02-25 18:01:07,819 ] 64 root - INFO - Dataframe Gathered
+[ 2024-02-25 18:01:07,819 ] 49 root - INFO - Exception Occured in load_object function utils
+[ 2024-02-25 18:01:07,819 ] 28 root - INFO - Exception occured in prediction
+[ 2024-02-25 18:01:07,842 ] 224 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 18:01:07] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2024-02-25 18:01:07,984 ] 224 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 18:01:07] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-02-25 18:01:07,986 ] 224 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 18:01:07] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-02-25 18:01:07,999 ] 224 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 18:01:07] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-25 18:01:08,009 ] 224 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 18:01:08] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

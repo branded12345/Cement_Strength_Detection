@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diamond Predictor</title>
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("./assests/photo.jpg");
+    background-size: cover; /* Adjusts the background image to cover the entire container */
+    background-position: center; /* Centers the background image */
+    background-color: #b0e8b3;
+}
+
+  video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adding opacity to improve readability */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure the form container is above the video */
+    position: relative;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  select {
+    cursor: pointer;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<video autoplay muted loop>
+  <source src="../assets/diamond_video.mp4" type="video/mp4">
+  <!-- Add other video sources here if needed -->
+  Your browser does not support the video tag.
+</video>
+
+<div class="container">
+  <form action="{{url_for('predict_datapoint')}}" method="POST",autocomplete="off">
+      <div class="form-group">
+          <label for="cement">Cement:</label>
+          <input type="text" id="cement" name="cement" placeholder="Enter cement value (float)",autocomplete="off">
+      </div>
+
+      <div class="form-group">
+          <label for="blast_furnace_slag">Last Furnace Slag:</label>
+          <input type="text" id="blast_furnace_slag" name="blast_furnace_slag" placeholder="Enter blast_furnace_slag value (float)",autocomplete="off">
+      </div>
+
+      <div class="form-group">  
+          <label for="fly_ash">Fly Ash:</label>
+          <input type="text" id="fly_ash" name="fly_ash" placeholder="Enter fly_ash value (float)",autocomplete="off">
+      </div>
+      
+      <div class="form-group">
+          <label for="water">Water:</label>
+          <input type="text" id="water" name="water" placeholder="Enter water value (float)",autocomplete="off">
+      </div>
+    
+      <div class="form-group">
+          <label for="superplasticizer">Super Plasticizer:</label>
+          <input type="text" id="superplasticizer" name="superplasticizer" placeholder="Enter super plasticizer value (float)",autocomplete="off">
+      </div>
+    
+      <div class="form-group">
+          <label for="coarse_aggregate">Coarse Aggregate:</label>
+          <input type="text" id="coarse_aggregate" name="coarse_aggregate" placeholder="Enter coarse Aggregate value (float)",autocomplete="off">
+      </div>         
+      <div class="form-group">
+        <label for="fine_aggregate">Fine Aggregate:</label>
+        <input type="text" id="fine_aggregate" name="fine_aggregate" placeholder="Enter fine_aggregate value (float)",autocomplete="off">
+     </div> 
+     <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Enter age value (float)",autocomplete="off">
+    </div>
+
+    <div style="clear:both;"></div>
+    <input type="submit" value="Submit">
+  </form>
+
+  {{final_result}}
+</div>
+
+</body>
+</html>

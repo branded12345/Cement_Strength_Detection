@@ -1,0 +1,3 @@
+[ 2024-02-25 17:03:18,476 ] 25 root - INFO - Data Ingestion method starts
+[ 2024-02-25 17:03:18,478 ] 46 root - ERROR - Error occurred in Data Ingestion config: [Errno 2] No such file or directory: 'notebook/data\\concrete_data.csv'
+[ 2024-02-25 17:03:18,478 ] 107 root - INFO - Exception occured in the initiate_datatransformation
